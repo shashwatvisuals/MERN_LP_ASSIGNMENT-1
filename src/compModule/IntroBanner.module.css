@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html body {
+    background-color: #181717;
+    color: #ffffff;
+    font-family: 'lato';
+}
+
+.upperHalf {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.leftHalf {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 30px;
+}
+
+.firstLine {
+    display: flex;
+    flex-direction: row;
+    /* margin-top: -157px; */
+    margin-bottom: 50px;
+}
+
+.firstLine h1 {
+    display: flex;
+    align-items: center;
+}
+
+.secondLine {
+    margin-bottom: 50px;
+
+}
+
+.secondLine span {
+    background: linear-gradient(116.79deg, #DB2777 -10.97%, #F97316 114.58%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.thirdLine {
+    margin-bottom: 50px;
+}
+
+.bothButton {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.downloadButton {
+    width: 189px;
+    height: 61px;
+    background: linear-gradient(126.89deg, #DB2777 -67.19%, #F97316 203.32%);
+    border-radius: 10px;
+    border: none;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    color: #ffffff;
+    display: flex;
+    top : 5px;
+    height: 40px;
+    width: 50px;
+    margin-right: 5px;
+}
+
+.downloadButton {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 10px;
+}
+
+.rightHalf {
+    position: relative;
+    width: 300px; /* Adjust based on the phone image size */
+    height: 600px; /* Adjust based on the phone image size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 14vw;
+
+}
+
+.iPhone {
+    position: relative; /* Keeps the phone on top of the circle */
+    z-index: 2; /* Places the phone above the circle */
+    height: 576px;
+    /* width: 266px; Adjust as needed */
+    margin-top: 77px; /* Adjust if slightly off */
+    margin-left: 65px;
+    
+}
+
+.outerCircle {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(
+        126.89deg,
+        rgba(219, 39, 119, 0.12) -67.19%,
+        rgba(249, 115, 22, 0.12) 203.32%
+    );
+    border-radius: 50%;
+    animation: fade 3s infinite;
+    z-index: 0;
+}
+
+.innerCircle {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(
+        126.89deg,
+        rgba(219, 39, 119, 0.3) -67.19%,
+        rgba(249, 115, 22, 0.3) 203.32%
+    ); /* Darker gradient for the inner circle */
+    border-radius: 50%;
+    z-index: 1; /* Stays above the outer circle */
+}
+
+@keyframes fade {
+    0% {
+        transform: scale(0.8); /* Start slightly smaller */
+        opacity: 0.6; /* Slightly faded */
+    }
+    50% {
+        transform: scale(1.2); /* Expand in the middle */
+        opacity: 1; /* Fully visible */
+    }
+    100% {
+        transform: scale(0.8); /* Shrink back */
+        opacity: 0.6; /* Faded again */
+    }
+}
+
+.lowerHalf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0vw 12vw;
+}
+
+.lowerHalf h1 {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.lowerHalf p {
+    font-size: 22px;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+.lowerHalf button {
+    width: 168px;
+    height: 48px;
+    background: linear-gradient(126.89deg, #DB2777 -67.19%, #F97316 203.32%);
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 30px;
+    color: #ffffff;
+}

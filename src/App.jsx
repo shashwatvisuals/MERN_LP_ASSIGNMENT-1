@@ -12,15 +12,15 @@ import Footer from "./components/Footer"
 function App() {
   return (
     <>
-        <Header/>
+        <Header className = "header"/>
         <IntroBanner/>
         <Card/>
-        <Coach/>
+        {/* <Coach/>
         <Features/>
         <GetTheApp/>
         <StepsSection/>
         <OurCoach/>
-        <Footer/>
+        <Footer/> */}
 
     </>
   )
