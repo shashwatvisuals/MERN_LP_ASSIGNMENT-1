@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parentDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.textArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textArea span {
+    background: linear-gradient(116.79deg, #DB2777 -10.97%, #F97316 114.58%);
+    background-clip: text;
+    color: transparent; 
+}
+
+.textArea h1 {
+    margin-bottom: 20px;
+}
+
+.textArea p {
+    text-align: center;
+    width: 70%;
+}
+
+.animationMainDiv {
+    position: relative;
+    width: 300px; /* Adjust based on the phone image size */
+    height: 600px; /* Adjust based on the phone image size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.iPhone {
+    position: relative; /* Keeps the phone on top of the circle */
+    z-index: 2; /* Places the phone above the circle */
+    height: 576px;
+    /* width: 266px; Adjust as needed */
+    margin-top: 77px; /* Adjust if slightly off */
+    margin-left: 69px;
+}
+
+.outerCircle {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(
+        126.89deg,
+        rgba(219, 39, 119, 0.12) -67.19%,
+        rgba(249, 115, 22, 0.12) 203.32%
+    );
+    border-radius: 50%;
+    animation: fade 2s infinite;
+    z-index: 0;
+
+}
+
+.innerCircle {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(
+        126.89deg,
+        rgba(219, 39, 119, 0.3) -67.19%,
+        rgba(249, 115, 22, 0.3) 203.32%
+    ); /* Darker gradient for the inner circle */
+    border-radius: 50%;
+    z-index: 1; /* Stays above the outer circle */
+    animation: fadeInner 2s infinite;
+    top: 12%;
+    left: 13%;
+    transform: translate(50%, 50%);
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+}
+
+@keyframes fadeInner {
+    0% {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+}
+
+
+/* Circle Icons */
+/* General styles remain the same as before */
+
+.leftIcon,
+.rightIcon,
+.topLeftIcon,
+.topRightIcon {
+    position: absolute;
+    width: 50px; /* Inner circle size */
+    height: 50px;
+    background-color: #262626; /* Inner circle color */
+    border-radius: 50%;
+    z-index: 1; /* To ensure icons appear above the outer circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Add a parent wrapper for border and gap */
+.iconWrapper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px; /* Outer size (inner size + 2 * gap + 2 * border) */
+    height: 70px;
+    border: 5px solid #262626; /* Border color */
+    background-color: transparent; /* Ensure gap is visible */
+    border-radius: 50%; /* Makes the wrapper circular */
+    z-index: 1;
+}
+
+/* Positions for the icons */
+.leftIconWrapper {
+
+    left: -110px;
+    bottom: 110px;
+}
+
+.rightIconWrapper {
+    right: -110px;
+    bottom: 148px;
+}
+
+.topLeftIconWrapper {
+    left: -110px;
+    top: 110px;
+}
+
+.topRightIconWrapper {
+    right: -110px;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.iconText1 {
+    height: 100px;
+    width: 200px; 
+    display: block;
+    z-index: 3;
+    position: absolute;
+    left:-246px;
+    margin-top: -125px;
+    text-align: end;
+    
+}
+
+.iconTexth3 {
+    font-size: 16px; /* Slightly larger for heading */
+    font-weight: bold;
+    color: #ffffff; /* Heading color */
+    margin: 0; /* Remove extra margins */
+    display: block; /* Ensure it's treated as a block element */
+    line-height: 1.5; /* Proper spacing between lines */
+}
+
+.iconTextp {
+    font-size: 14px;
+    color: #ffffff; /* Text color for description */
+    margin: 5px 0 0; /* Space between heading and description */
+    display: block; /* Ensure it's treated as a block element */
+    line-height: 1.4; /* Proper readability */
+}
+
+.iconText2 {
+    height: 100px;
+    width: 200px; 
+    display: block;
+    z-index: 3;
+    position: absolute;
+    left: -140px;
+    top: 387px;
+    text-align: end;
+    
+}
+
+.iconText3 {
+    height: 100px;
+    width: 200px; 
+    display: block;
+    z-index: 3;
+    position: absolute;
+    left: 0px;
+    margin-top: 200px;
+    text-align: start;
+    
+}
+
+.iconText4 {
+    height: 100px;
+    width: 210px; 
+    display: block;
+    z-index: 3;
+    position: absolute;
+    left: 0px;
+    margin-top: 200px;
+    text-align: start;
+}

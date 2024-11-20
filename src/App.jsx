@@ -15,8 +15,8 @@ function App() {
         <Header className = "header"/>
         <IntroBanner/>
         <Card/>
-        {/* <Coach/>
-        <Features/>
+        <Coach/>
+        {/* <Features/>
         <GetTheApp/>
         <StepsSection/>
         <OurCoach/>
