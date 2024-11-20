@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainDiv h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 84px;
+}
+
+.mainDiv span {
+
+    background: linear-gradient(116.79deg, #DB2777 -10.97%, #F97316 114.58%);
+    background-clip: text;
+    color: transparent; 
+
+}
+
+
+.imageContainer {
+    margin: auto;
+    width: 58%;
+
+}
+
+.images {
+    /* position: relative; */
+width: 60vw;
+
+}
+
+#phone1 {
+    position: relative;
+    /* z-index: 1; */
+}
+
+#phone2 {
+    position: absolute;
+    /* z-index: 2; */
+    left: 34%;
+}
+
+.bothButton {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.downloadButton {
+    width: 189px;
+    height: 61px;
+    background: linear-gradient(126.89deg, #DB2777 -67.19%, #F97316 203.32%);
+    border-radius: 10px;
+    border: none;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    color: #ffffff;
+    display: flex;
+    top : 5px;
+    height: 40px;
+    width: 50px;
+    margin-right: 5px;
+}
+
+.downloadButton {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 10px;
+}

@@ -34,8 +34,8 @@
 
 .animationMainDiv {
     position: relative;
-    width: 300px; /* Adjust based on the phone image size */
-    height: 600px; /* Adjust based on the phone image size */
+    width: 300px; 
+    height: 600px; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,11 +43,10 @@
 }
 
 .iPhone {
-    position: relative; /* Keeps the phone on top of the circle */
-    z-index: 2; /* Places the phone above the circle */
+    position: relative; 
+    z-index: 2; 
     height: 576px;
-    /* width: 266px; Adjust as needed */
-    margin-top: 77px; /* Adjust if slightly off */
+    margin-top: 77px; 
     margin-left: 69px;
 }
 
@@ -74,9 +73,9 @@
         126.89deg,
         rgba(219, 39, 119, 0.3) -67.19%,
         rgba(249, 115, 22, 0.3) 203.32%
-    ); /* Darker gradient for the inner circle */
+    ); 
     border-radius: 50%;
-    z-index: 1; /* Stays above the outer circle */
+    z-index: 1; 
     animation: fadeInner 2s infinite;
     top: 12%;
     left: 13%;
@@ -114,40 +113,37 @@
 }
 
 
-/* Circle Icons */
-/* General styles remain the same as before */
 
 .leftIcon,
 .rightIcon,
 .topLeftIcon,
 .topRightIcon {
     position: absolute;
-    width: 50px; /* Inner circle size */
-    height: 50px;
-    background-color: #262626; /* Inner circle color */
+    width: 55px; 
+    height: 55px;
+    background-color: #262626;
     border-radius: 50%;
-    z-index: 1; /* To ensure icons appear above the outer circle */
+    z-index: 1; 
     display: flex;
     justify-content: center;
     align-items: center;
     
 }
 
-/* Add a parent wrapper for border and gap */
+
 .iconWrapper {
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70px; /* Outer size (inner size + 2 * gap + 2 * border) */
+    width: 70px; 
     height: 70px;
-    border: 5px solid #262626; /* Border color */
-    background-color: transparent; /* Ensure gap is visible */
-    border-radius: 50%; /* Makes the wrapper circular */
+    border: 5px solid #262626; 
+    background-color: transparent; 
+    border-radius: 50%;
     z-index: 1;
 }
 
-/* Positions for the icons */
 .leftIconWrapper {
 
     left: -110px;
@@ -188,20 +184,20 @@
 }
 
 .iconTexth3 {
-    font-size: 16px; /* Slightly larger for heading */
+    font-size: 16px; 
     font-weight: bold;
-    color: #ffffff; /* Heading color */
-    margin: 0; /* Remove extra margins */
-    display: block; /* Ensure it's treated as a block element */
-    line-height: 1.5; /* Proper spacing between lines */
+    color: #ffffff; 
+    margin: 0; 
+    display: block; 
+    line-height: 1.5; 
 }
 
 .iconTextp {
     font-size: 14px;
-    color: #ffffff; /* Text color for description */
-    margin: 5px 0 0; /* Space between heading and description */
-    display: block; /* Ensure it's treated as a block element */
-    line-height: 1.4; /* Proper readability */
+    color: #ffffff; 
+    margin: 5px 0 0; 
+    display: block; 
+    line-height: 1.4; 
 }
 
 .iconText2 {

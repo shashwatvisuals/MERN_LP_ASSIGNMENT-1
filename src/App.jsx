@@ -17,8 +17,8 @@ function App() {
         <Card/>
         <Coach/>
         <Features/>
-        {/* <GetTheApp/>
-        <StepsSection/>
+        <GetTheApp/>
+        {/* <StepsSection/>
         <OurCoach/>
         <Footer/> */}
 
