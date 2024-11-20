@@ -1,28 +1,3 @@
-// import React from 'react'
-// import styles from "../compModule/Coach.module.css"
-// function Coach() {
-//   return (
-//     <div className={styles.parentDiv}>
-//       <div className={styles.textArea}>
-//         <h1>What’s in it for <span>Coach</span></h1>
-//         <p>FitnEarnPal empowers coaches to grow and reach a global audience while valuable health and fitness insights to users. </p>
-//       </div>
-//       <div className={styles.animationMainDiv}>
-//     <div className={styles.outerCircle}>
-//       <div className={styles.outerCircle}></div>
-//     </div>
-//         <div className={styles.leftIcon}></div>
-//         <div className={styles.rightIcon}></div>
-//         <div className={styles.topLeftIcon}></div>
-//         <div className={styles.topRightIcon}></div>
-//       <img className={styles.iPhone} src="./assets/iPhone13ProMax2.png" alt="image" />
-//     </div>
-//     </div>
-//   )
-// }
-
-// export default Coach
-
 import React from 'react';
 import styles from "../compModule/Coach.module.css";
 
