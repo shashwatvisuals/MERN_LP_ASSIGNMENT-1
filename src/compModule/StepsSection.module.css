@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.mainDiv {
+    background: linear-gradient(126.89deg, rgba(219, 39, 119, 0.12) -67.19%, rgba(249, 115, 22, 0.12) 203.32%);
+
+}
+
+.mainDiv h1 {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+
+.iconLine {
+    height: 3px;
+    width: 76vw;
+    background: linear-gradient(126.89deg, #DB2777 -67.19%, #F97316 203.32%);
+}
+
+.flexedIcon {
+    display: flex;
+    justify-content: center;
+}
+
+.allIcons {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin-top: -36px;
+    gap: 20vw;
+}
+
+.icon {
+    position: relative;
+    height: 70px;
+    width: 70px;
+    background-color: #181717;
+    border-radius: 50%;
+    z-index: 1;
+    /* top: 30px;
+    left: 95px; */
+    display: flex;
+    border: 5px solid #262626;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px #181717;
+
+}
+
+.icon::before {
+    content: '';
+    width: calc(100% - 5px);
+    height: calc(100% - 5px);
+    background-color: #262626;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.icon img {
+    z-index: 2;
+}
+
+.flexedTitle {
+    display: flex;
+    flex-direction: row;
+    gap: 14.5vw;
+    padding-top: 56px;
+    justify-content: center;
+    
+}
+
+.flexedTitle h3 {
+    height: 50px;
+    width: 150px;
+    text-align: center;
+}
+
+.flexedPara {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0px 50px 0px;
+    justify-content: center;
+    gap: 10vw;
+}
+
+.flexedPara p {
+    text-align: center;
+    height: auto;
+    width: 15vw;
+}
