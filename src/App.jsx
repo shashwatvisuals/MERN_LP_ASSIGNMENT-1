@@ -19,8 +19,8 @@ function App() {
         <Features/>
         <GetTheApp/>
         <StepsSection/>
-        {/* <OurCoach/>
-        <Footer/> */}
+        <OurCoach/>
+        {/* <Footer/> */}
 
     </>
   )

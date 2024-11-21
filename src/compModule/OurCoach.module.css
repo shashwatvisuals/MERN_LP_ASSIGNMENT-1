@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.mainDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Lato';
+    padding-bottom: 70px;
+}
+
+.upperText h1 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.upperText span{
+    background: linear-gradient(116.79deg, #DB2777 -10.97%, #F97316 114.58%);
+    background-clip: text;
+    color: transparent; 
+
+}
+
+.upperText p {
+    font-weight: 400;
+    font-size: 32px;
+    height: 100px;
+    width: 70vw;
+    margin-bottom: 30px;
+}
+
+.star {
+    color: #FB923C;
+    transition: color 0.3s ease;
+    margin-bottom: 20px;
+
+}
+
+.dialogBox p {
+    height: 100px;
+    width: 200px;
+}
+
+.ourCoach {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 300px;
+  }
+  
+  .coach {
+    position: absolute;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    opacity: 0;
+    transform: translateY(20px);
+    visibility: hidden;
+  }
+
+.coach img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.coach h3,p {
+    text-align: center;
+}
+  
+  .visible {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+  }
+  
+  .hidden{
+    opacity: 0;
+    transform: translateY(20px);
+    visibility: hidden;
+  }
+  
+  .coach h3, .coach p {
+    opacity: 0;
+    transform: translateX(20px); 
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  }
+  
+  .visible h3, .visible p {
+    opacity: 1;
+    transform: translateX(0); 
+  }
+
+
+  .dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .dot {
+    font-size: 24px;
+    color:#262626;
+    transition: color 0.3s, background 0.3s;
+  }
+  
+  .activeDot {
+    color: transparent;
+    background: linear-gradient(126.89deg, #db2777 -67.19%, #f97316 203.32%);
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+
+  }
+
+
+  .leftIcons,
+.rightIcons {
+  position: absolute;
+
+  
+}
+
+.leftIcons {
+  left: 23vw; 
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 105px;
+  height: 75px;
+  width: 75px;
+}
+
+.rightIcons {
+  right: 23vw; 
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 105px;
+  height: 75px;
+  width: 75px;
+}
+
+#leftMiddleicon {
+    left: -11vw;
+    position: relative;
+    height: 100px;
+    width: 100px;
+}
+
+#rightMiddleicon {
+    right: -11vw;
+    position: relative;
+    height: 100px;
+    width: 100px;
+}
