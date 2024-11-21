@@ -20,7 +20,7 @@ function App() {
         <GetTheApp/>
         <StepsSection/>
         <OurCoach/>
-        {/* <Footer/> */}
+        <Footer/>
 
     </>
   )
