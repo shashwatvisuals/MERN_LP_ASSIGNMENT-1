@@ -20,6 +20,7 @@ function IntroBanner() {
     <br/>Lives <span>Join FitnEarnPal Today !</span></h2>
     </div>
     <h2 className={styles.thirdLine}>A global platform for coaches to connect, Inspire and <br/> change Lives</h2>
+    
     <div className={styles.bothButton}>
       <button className={styles.downloadButton}>
         <FaApple className={styles.icon}/>
@@ -37,7 +38,7 @@ function IntroBanner() {
       </button>
     </div>
     </div>
-    
+
     <div className={styles.rightHalf}>
     <div className={styles.outerCircle}>
       <div className={styles.innerCircle}></div>
