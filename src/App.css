@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+}
+
+.wholeWebsite {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+

@@ -37,13 +37,13 @@ function IntroBanner() {
       </button>
     </div>
     </div>
-    <div className={styles.rightHalf}>
+    
     <div className={styles.rightHalf}>
     <div className={styles.outerCircle}>
-      <div className={styles.outerCircle}></div>
+      <div className={styles.innerCircle}></div>
     </div>
       <img className={styles.iPhone} src="./assets/iPhone13ProMax3.png" alt="image" />
-    </div>
+   
     </div>
     </div>
   <div className={styles.lowerHalf}>

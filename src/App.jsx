@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import Header from "./components/Header"
 import IntroBanner from "./components/IntroBanner"
 import Card from "./components/Card"
@@ -8,10 +8,11 @@ import GetTheApp from "./components/GetTheApp"
 import StepsSection from "./components/StepsSection"
 import OurCoach from "./components/OurCoach"
 import Footer from "./components/Footer"
+import './App.css'
 
 function App() {
   return (
-    <>
+    <div className = "wholeWebsite">
         <Header className = "header"/>
         <IntroBanner/>
         <Card/>
@@ -21,8 +22,7 @@ function App() {
         <StepsSection/>
         <OurCoach/>
         <Footer/>
-
-    </>
+    </div>
   )
 }
 
