@@ -49,8 +49,15 @@
     justify-content: center;
     align-items: center;
     box-shadow: 0 4px 10px #181717;
-
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: grayscale(100%);
 }
+
+.icon:hover {
+    filter: grayscale(0%);
+    transform: scale(1.2);
+    filter: brightness(1.2);
+  }
 
 .icon::before {
     content: '';
@@ -63,6 +70,8 @@
 
 .icon img {
     z-index: 2;
+    background: linear-gradient(116.79deg, #DB2777 -10.97%, #F97316 114.58%);
+    background-clip: text;
 }
 
 .flexedTitle {

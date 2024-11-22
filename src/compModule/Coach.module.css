@@ -130,6 +130,28 @@
     
 }
 
+.leftIcon{
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: grayscale(100%);
+
+}
+
+.leftIcon:hover{
+    filter: grayscale(0%);
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+.rightIcon{
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: grayscale(100%);
+}
+
+.rightIcon:hover{
+    filter: grayscale(0%);
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
 
 .iconWrapper {
     position: absolute;
@@ -144,16 +166,18 @@
     z-index: 1;
 }
 
-.leftIconWrapper {
 
+.leftIconWrapper {
     left: -110px;
     bottom: 110px;
 }
+
 
 .rightIconWrapper {
     right: -110px;
     bottom: 148px;
 }
+
 
 .topLeftIconWrapper {
     left: -110px;
@@ -167,6 +191,8 @@
     justify-content: center;
     align-items: center;
 }
+
+
 
 
 

@@ -71,14 +71,14 @@ function OurCoach() {
         ))}
       </div>
       <div className={styles.leftIcons}>
-        <img src="./assets/RobertBrown.png" alt="image" />
+        <img id={styles.leftTopIcon} src="./assets/RobertBrown.png" alt="image" />
         <img id = {styles.leftMiddleicon} src="./assets/RobertBrown.png" alt="image" />
-        <img src="./assets/RobertBrown.png" alt="image" />
+        <img id={styles.leftBottomIcon} src="./assets/RobertBrown.png" alt="image" />
       </div>
       <div className={styles.rightIcons}>
-        <img src="./assets/RobertBrown.png" alt="image" />
+        <img id={styles.rightTopIcon}src="./assets/RobertBrown.png" alt="image" />
         <img id = {styles.rightMiddleicon} src="./assets/RobertBrown.png" alt="image" />
-        <img src="./assets/RobertBrown.png" alt="image" />
+        <img id={styles.leftBottomIcon} src="./assets/RobertBrown.png" alt="image" />
       </div>
     </div>
   )

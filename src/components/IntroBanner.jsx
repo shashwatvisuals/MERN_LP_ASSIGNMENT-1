@@ -18,8 +18,8 @@ function IntroBanner() {
     gsap.to(words, {
       scrollTrigger: {
         trigger: ".word",  
-        start: "top 50%",            
-        end: "+=180px",       
+        start: "top 72%",            
+        end: "+=380px",       
         toggleActions: "play none none none",
         scrub: true,                 
         markers: true,              
@@ -32,7 +32,6 @@ function IntroBanner() {
     
   }, []);
 
-  // Function to split text into words and wrap each word in a span
   const splitText = (words) => {
     return words.split(" ").map((word, index) => (
       

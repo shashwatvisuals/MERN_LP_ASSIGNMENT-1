@@ -133,6 +133,29 @@
   gap: 105px;
   height: 75px;
   width: 75px;
+
+}
+
+#leftTopIcon{
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: grayscale(100%);
+}
+
+#leftTopIcon:hover {
+  filter: grayscale(0%);
+  transform: scale(1.2);
+  filter: brightness(1.2);
+}
+
+#leftBottomIcon{
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: grayscale(100%);
+}
+
+#leftBottomIcon:hover {
+  filter: grayscale(0%);
+  transform: scale(1.2);
+  filter: brightness(1.2);
 }
 
 .rightIcons {
@@ -145,11 +168,41 @@
   width: 75px;
 }
 
+#rightTopIcon{
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: grayscale(100%);
+}
+
+#rightTopIcon:hover {
+  filter: grayscale(0%);
+  transform: scale(1.2);
+  filter: brightness(1.2);
+}
+
+#rightBottomIcon{
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: grayscale(100%);
+}
+
+#rightBottomIcon:hover {
+  filter: grayscale(0%);
+  transform: scale(1.2);
+  filter: brightness(1.2);
+}
+
 #leftMiddleicon {
     left: -11vw;
     position: relative;
     height: 100px;
     width: 100px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: grayscale(100%);
+}
+
+#leftMiddleicon:hover {
+  filter: grayscale(0%);
+  transform: scale(1.2);
+  filter: brightness(1.2);
 }
 
 #rightMiddleicon {
@@ -157,4 +210,12 @@
     position: relative;
     height: 100px;
     width: 100px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: grayscale(100%);
+}
+
+#rightMiddleicon:hover {
+  filter: grayscale(0%);
+  transform: scale(1.2);
+  filter: brightness(1.2);
 }
