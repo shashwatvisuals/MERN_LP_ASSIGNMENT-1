@@ -197,6 +197,7 @@ html body {
     font-size: 42px;
     font-weight: 800;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .lowerHalf p {
@@ -206,6 +207,17 @@ html body {
     margin-bottom: 30px;
 
 }
+
+#scrollText {
+color: #808080; /* Initial color */
+  /* transition: color 0.3s ease-in-out;  */
+}
+
+.word {
+    display: inline-block;
+    transition: none; 
+    opacity: 1;
+  }
 
 .lowerHalf button {
     width: 168px;

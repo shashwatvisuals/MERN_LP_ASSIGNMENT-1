@@ -1,12 +1,46 @@
 import React from 'react'
+import { useRef, useEffect } from 'react';
+import ScrollTrigger from "gsap/ScrollTrigger";
+import gsap from "gsap";
 import { FaApple } from "react-icons/fa";
 import { FaGooglePlay } from "react-icons/fa";
 import styles from "../compModule/IntroBanner.module.css"
 
 
+gsap.registerPlugin(ScrollTrigger);
 
 
 function IntroBanner() {
+
+
+  useEffect(() => {
+    const words = document.querySelectorAll(".word");
+    gsap.to(words, {
+      scrollTrigger: {
+        trigger: ".word",  
+        start: "top 50%",            
+        end: "+=180px",       
+        toggleActions: "play none none none",
+        scrub: true,                 
+        markers: true,              
+      },
+      color: "#ffffff",            
+      stagger: 0.1,                
+      // ease: "none", 
+      // immediateRender: true,                
+    });
+    
+  }, []);
+
+  // Function to split text into words and wrap each word in a span
+  const splitText = (words) => {
+    return words.split(" ").map((word, index) => (
+      
+      <span key={index} className="word">{word} </span>
+    ));
+  };
+
+
   return (
     <div>
     <div className={styles.upperHalf}>
@@ -20,7 +54,7 @@ function IntroBanner() {
     <br/>Lives <span>Join FitnEarnPal Today !</span></h2>
     </div>
     <h2 className={styles.thirdLine}>A global platform for coaches to connect, Inspire and <br/> change Lives</h2>
-    
+
     <div className={styles.bothButton}>
       <button className={styles.downloadButton}>
         <FaApple className={styles.icon}/>
@@ -48,8 +82,14 @@ function IntroBanner() {
     </div>
     </div>
   <div className={styles.lowerHalf}>
-    <h1>Join growing community of Coaches</h1>
-    <p>FitnEarnPal is your getaway to connect with a global community of health and fitness enthusiastic, share experience and valuable knowledge, and grow their audience. As a coach you have the power to inspire, educate and motivate users worldwide by creating and sharing impactful content, workout videos, conducting live sessions and much more.</p>
+    <div className="scroll-section" id={styles.scrollText}>
+      <h1>
+        {splitText("Join growing community of Coaches")}
+        </h1>
+      <p >
+        {splitText("FitnEarnPal is your getaway to connect with a global community  of health and fitness enthusiastic, share experience and valuable knowledge, and grow their audience. As a coach you have the power to inspire, educate and motivate users worldwide by creating and sharing impactful content, workout videos, conducting live sessions and much more.")}
+        </p>
+    </div>
     <button>Join Now</button>
   </div>
     </div>
