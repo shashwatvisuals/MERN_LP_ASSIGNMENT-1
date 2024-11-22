@@ -22,7 +22,7 @@ function IntroBanner() {
         end: "+=380px",       
         toggleActions: "play none none none",
         scrub: true,                 
-        markers: true,              
+        markers: false,              
       },
       color: "#ffffff",            
       stagger: 0.1,                
